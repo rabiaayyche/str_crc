@@ -1,0 +1,630 @@
+patient,age_at_index,gender,race,stage,msi_status,ad_race
+TCGA-DC-6158,70,male,white,stage i,mss,EUR
+TCGA-F4-6854,77,female,white,stage iia,mss,EUR
+TCGA-DC-5337,69,male,white,stage i,mss,EUR
+TCGA-AA-3561,72,male,not reported,stage iia,mss,EUR
+TCGA-AA-A00O,83,female,not reported,stage iiic,msi-l,NOT
+TCGA-DM-A28F,73,male,white,stage iiib,mss,EUR
+TCGA-AA-3866,78,female,not reported,stage i,msi-l,EUR
+TCGA-AF-3913,60,male,black or african american,stage iv,mss,AFR
+TCGA-AA-3524,85,male,not reported,stage ii,mss,EUR
+TCGA-AG-3578,76,female,not reported,stage iia,mss,EUR
+TCGA-AA-3877,83,female,not reported,stage i,msi-h,EUR
+TCGA-AA-3986,73,male,not reported,stage i,mss,EUR
+TCGA-AA-3862,82,male,not reported,stage iia,mss,EUR
+TCGA-AG-3894,65,male,not reported,stage iia,mss,EUR
+TCGA-NH-A6GC,66,female,black or african american,stage ivb,mss,AFR
+TCGA-AA-A010,46,female,not reported,stage iib,msi-l,NOT
+TCGA-A6-2675,78,male,white,stage iia,mss,EUR
+TCGA-AA-A00D,70,male,not reported,stage i,mss,EUR
+TCGA-AA-A00U,50,male,not reported,stage iiib,mss,NOT
+TCGA-EI-6510,77,female,white,,msi-l,EUR
+TCGA-AA-3519,63,male,not reported,stage iii,mss,EUR
+TCGA-AG-A015,64,female,not reported,stage i,mss,NOT
+TCGA-G5-6641,67,male,white,stage iiia,mss,EUR
+TCGA-AA-3848,82,female,not reported,stage iiic,mss,EUR
+TCGA-D5-6922,76,male,white,stage iiia,mss,EUR
+TCGA-EF-5830,54,male,white,stage iib,mss,EUR
+TCGA-AA-3856,59,male,not reported,stage iia,mss,EUR
+TCGA-AG-A032,68,male,not reported,stage iiib,mss,EUR
+TCGA-G4-6323,50,male,black or african american,stage ia,mss,AFR
+TCGA-F4-6703,64,male,white,stage iia,msi-h,EUR
+TCGA-AA-A01V,59,male,not reported,stage i,mss,EUR
+TCGA-EI-6917,33,male,white,stage iiia,mss,EUR
+TCGA-AA-A00K,79,male,not reported,stage iia,msi-l,NOT
+TCGA-D5-5538,60,female,white,stage iiib,mss,EUR
+TCGA-A6-5660,73,male,black or african american,stage iiic,mss,AFR
+TCGA-AA-3821,81,female,not reported,stage i,msi-h,EUR
+TCGA-A6-6651,55,female,white,stage iiib,mss,EUR
+TCGA-AG-3574,89,female,not reported,stage ii,mss,EUR
+TCGA-AD-5900,67,male,white,stage i,msi-h,EUR
+TCGA-A6-2679,73,female,white,stage iib,mss,EUR
+TCGA-AA-3837,67,male,not reported,stage iia,mss,EUR
+TCGA-AG-3593,72,female,not reported,stage iia,mss,EUR
+TCGA-AA-A00A,80,male,not reported,stage iia,msi-h,NOT
+TCGA-AH-6549,66,male,white,,msi-l,EUR
+TCGA-AA-A02K,50,male,not reported,stage iv,mss,EUR
+TCGA-AA-3971,58,male,not reported,stage iii,mss,EUR
+TCGA-AG-A01N,68,female,not reported,stage iv,mss,EUR
+TCGA-5M-AAT4,74,male,black or african american,stage iv,mss,AFR
+TCGA-AA-A00E,65,male,not reported,stage iia,msi-h,EUR
+TCGA-AA-3562,82,male,not reported,stage iiic,mss,EUR
+TCGA-AG-3592,68,male,not reported,stage iia,msi-l,EUR
+TCGA-D5-6932,69,male,white,stage iia,mss,EUR
+TCGA-AA-A01F,72,male,not reported,stage iiib,mss,NOT
+TCGA-AG-4015,85,female,not reported,stage iia,mss,EUR
+TCGA-AA-A01P,80,female,not reported,stage iii,msi-h,EUR
+TCGA-AD-6888,73,male,white,stage iiib,mss,EUR
+TCGA-DM-A288,68,male,white,stage iiic,mss,EUR
+TCGA-G4-6310,69,male,white,stage iiib,mss,EUR
+TCGA-AY-5543,65,female,black or african american,stage iva,mss,AFR
+TCGA-AA-3976,70,male,not reported,stage iiia,mss,EUR
+TCGA-AG-3612,55,female,not reported,stage iiib,mss,EUR
+TCGA-CI-6621,63,male,white,stage iiib,mss,EUR
+TCGA-AG-3901,67,female,not reported,stage iiib,mss,EUR
+TCGA-AA-3495,79,male,not reported,stage i,mss,EUR
+TCGA-D5-5539,60,male,white,stage iiia,mss,EUR
+TCGA-DC-6683,43,male,white,stage iiib,mss,EUR
+TCGA-CA-5256,54,female,asian,stage iia,mss,EAS
+TCGA-AG-A02G,66,male,not reported,stage iv,mss,EUR
+TCGA-AG-3600,62,male,not reported,stage iiic,mss,EUR
+TCGA-AF-3911,48,male,white,stage iiic,msi-l,EUR
+TCGA-AH-6897,48,male,white,stage i,msi-l,EUR
+TCGA-G4-6627,84,male,white,stage iia,msi-l,EUR
+TCGA-AA-3819,41,female,not reported,stage iia,msi-l,EUR
+TCGA-A6-2686,81,female,white,stage iia,msi-h,EUR
+TCGA-AG-A020,57,female,not reported,stage iii,mss,EUR
+TCGA-AA-3833,63,female,not reported,stage iia,msi-h,EUR
+TCGA-AA-3530,80,male,not reported,stage i,mss,EUR
+TCGA-AA-3851,74,male,not reported,stage iia,mss,EUR
+TCGA-DM-A1D0,79,female,white,stage iia,mss,EUR
+TCGA-F4-6855,70,female,white,stage iia,msi-l,EUR
+TCGA-NH-A8F8,79,male,black or african american,stage iv,mss,AFR
+TCGA-AH-6903,46,male,white,stage iiib,mss,EUR
+TCGA-AZ-4313,51,female,white,stage i,msi-h,EUR
+TCGA-DY-A1DC,72,female,white,stage iia,mss,EUR
+TCGA-AA-3872,45,male,not reported,stage iv,mss,EUR
+TCGA-AA-3850,74,male,not reported,stage i,mss,EUR
+TCGA-A6-6140,62,male,white,stage iia,mss,EUR
+TCGA-AG-3726,63,female,not reported,stage i,mss,EUR
+TCGA-CM-5349,68,female,white,stage iia,mss,EUR
+TCGA-G4-6299,69,male,white,stage iiic,mss,EUR
+TCGA-AA-3695,63,female,not reported,stage iv,mss,EUR
+TCGA-EI-6512,64,female,white,stage iiib,mss,EUR
+TCGA-A6-5666,78,male,white,stage iic,msi-l,EUR
+TCGA-DC-6156,62,male,white,stage iva,mss,EUR
+TCGA-G4-6303,54,female,white,stage iv,msi-l,EUR
+TCGA-AA-3552,85,male,not reported,stage iiic,mss,EUR
+TCGA-CA-6717,57,male,asian,stage iia,mss,EAS
+TCGA-DC-6682,57,male,white,stage iia,mss,EUR
+TCGA-AA-3527,90,female,not reported,stage iia,mss,EUR
+TCGA-AM-5820,59,female,white,stage iva,mss,EUR
+TCGA-CA-5254,42,female,asian,stage iia,msi-l,EAS
+TCGA-G4-6293,49,female,white,stage iii,msi-l,EUR
+TCGA-D5-6898,51,female,white,stage i,mss,EUR
+TCGA-AA-3506,77,male,not reported,stage i,mss,EUR
+TCGA-D5-6930,67,male,white,stage iia,msi-h,EUR
+TCGA-A6-5667,40,female,white,stage iiib,mss,EUR
+TCGA-F4-6461,41,female,white,stage iiic,mss,EUR
+TCGA-AG-3599,70,male,not reported,stage i,mss,EUR
+TCGA-F4-6460,51,female,white,stage iiib,mss,EUR
+TCGA-AA-A03F,90,female,not reported,stage iii,mss,EUR
+TCGA-EI-7002,58,male,white,stage iv,msi-l,EUR
+TCGA-AA-3712,65,male,not reported,stage iii,mss,EUR
+TCGA-DC-6160,68,male,white,stage i,mss,NOT
+TCGA-G4-6628,78,male,white,stage i,msi-h,EUR
+TCGA-AY-6196,47,male,white,stage iiic,msi-l,EUR
+TCGA-AA-3688,80,male,not reported,stage iv,msi-l,EUR
+TCGA-G5-6572,56,male,white,,mss,EUR
+TCGA-AA-3560,72,female,not reported,stage iiic,mss,EUR
+TCGA-CM-5341,82,female,white,stage iiia,mss,EUR
+TCGA-CK-4951,79,female,white,stage iia,msi-h,EUR
+TCGA-AA-3548,71,female,not reported,stage iiic,mss,EUR
+TCGA-AA-A01X,80,female,not reported,stage iii,mss,EUR
+TCGA-AF-2693,75,male,white,stage i,mss,EUR
+TCGA-QG-A5YX,61,female,black or african american,stage iia,msi-l,AFR
+TCGA-G4-6306,71,male,white,,mss,EUR
+TCGA-AG-3581,63,male,not reported,stage i,mss,EUR
+TCGA-AY-4071,63,female,white,stage i,mss,EUR
+TCGA-EI-6885,57,female,white,stage iv,mss,EUR
+TCGA-AA-3655,68,male,not reported,stage ii,mss,EUR
+TCGA-AG-A026,66,male,not reported,stage ii,mss,EUR
+TCGA-D5-5540,73,male,white,stage iia,msi-l,EUR
+TCGA-A6-6137,55,male,white,stage iiib,mss,EUR
+TCGA-AU-6004,69,female,white,stage i,msi-h,EUR
+TCGA-AZ-4614,71,female,white,stage iva,msi-l,EUR
+TCGA-AA-3693,77,female,not reported,stage iv,mss,EUR
+TCGA-AF-2689,41,female,white,stage iv,mss,EUR
+TCGA-DC-6154,57,female,white,stage iva,msi-h,EUR
+TCGA-AA-3977,65,male,not reported,,mss,EUR
+TCGA-CM-6161,36,female,white,stage i,msi-l,EUR
+TCGA-F5-6864,74,female,white,stage iiib,msi-l,EUR
+TCGA-AA-A02E,82,female,not reported,stage iv,msi-l,NOT
+TCGA-AA-3510,70,male,not reported,stage ii,mss,EUR
+TCGA-AY-6386,66,female,black or african american,stage iiib,mss,AFR
+TCGA-AF-2690,76,female,white,stage iiic,mss,EUR
+TCGA-AA-3555,81,female,not reported,stage iia,mss,EUR
+TCGA-F5-6810,'--,'--,'--,,mss,EUR
+TCGA-CK-5913,58,female,white,stage iia,msi-h,EUR
+TCGA-AA-A00L,66,male,not reported,stage iia,mss,NOT
+TCGA-AA-3980,89,female,not reported,stage i,mss,EUR
+TCGA-CK-5916,71,female,white,stage i,msi-h,EUR
+TCGA-CI-6624,53,female,white,stage i,mss,EUR
+TCGA-D5-6541,49,male,white,stage iia,mss,EUR
+TCGA-A6-6649,66,male,white,stage iiib,mss,EUR
+TCGA-AA-3869,76,male,not reported,stage iv,mss,EUR
+TCGA-A6-2678,43,female,white,stage iiib,mss,EUR
+TCGA-D5-6926,65,male,white,stage iiib,mss,EUR
+TCGA-G4-6626,90,male,white,stage iia,mss,EUR
+TCGA-EI-6881,60,male,white,stage iiia,mss,EUR
+TCGA-CI-6619,41,male,white,stage iv,mss,EUR
+TCGA-AG-A023,62,female,not reported,stage iv,mss,NOT
+TCGA-AG-A011,80,male,not reported,stage iia,mss,NOT
+TCGA-AZ-4308,47,female,white,stage iiib,mss,EUR
+TCGA-CA-5797,56,male,asian,stage iia,mss,EAS
+TCGA-DM-A28K,75,male,white,stage iia,mss,EUR
+TCGA-DC-6681,70,female,white,stage iva,mss,EUR
+TCGA-A6-6782,82,male,white,stage iib,mss,EUR
+TCGA-DT-5265,51,male,asian,stage ii,mss,EAS
+TCGA-AF-3914,39,male,white,stage iiib,mss,NOT
+TCGA-AA-3531,75,female,not reported,stage iia,msi-l,EUR
+TCGA-EI-6514,59,female,white,stage iia,mss,EUR
+TCGA-CM-6172,70,female,white,stage iiib,mss,EUR
+TCGA-CM-6676,82,male,white,stage i,msi-l,EUR
+TCGA-AA-3675,84,male,not reported,stage ii,mss,EUR
+TCGA-G4-6294,75,male,white,stage iv,mss,EUR
+TCGA-AA-3858,67,male,not reported,stage i,mss,EAS
+TCGA-AA-3812,82,female,not reported,stage iia,mss,EUR
+TCGA-EI-6883,63,male,white,stage iic,mss,EUR
+TCGA-AD-6963,58,male,white,,mss,EUR
+TCGA-A6-A5ZU,59,male,black or african american,stage iiib,mss,AFR
+TCGA-NH-A50T,68,female,black or african american,stage iia,mss,AFR
+TCGA-A6-2684,75,female,white,stage i,msi-l,EUR
+TCGA-F4-6808,54,female,white,stage i,mss,EUR
+TCGA-CM-5868,59,female,white,stage iva,mss,EUR
+TCGA-A6-6138,61,male,white,stage i,mss,EUR
+TCGA-AA-A01Q,48,female,not reported,stage ii,msi-h,NOT
+TCGA-A6-5661,80,female,black or african american,stage iia,msi-h,AFR
+TCGA-A6-5665,84,female,white,stage iia,msi-h,EUR
+TCGA-EF-5831,72,male,white,stage iia,mss,EUR
+TCGA-AD-6895,84,male,white,stage iiib,msi-h,EUR
+TCGA-AA-3844,78,female,not reported,stage iiic,mss,EUR
+TCGA-A6-3808,73,male,white,stage iia,msi-l,EUR
+TCGA-A6-3807,53,female,white,stage iiic,mss,EUR
+TCGA-AG-A014,86,male,not reported,stage i,mss,NOT
+TCGA-NH-A6GA,58,male,black or african american,stage iiic,mss,AFR
+TCGA-CK-4952,48,female,white,stage iiic,mss,NOT
+TCGA-AA-3875,78,female,not reported,stage i,mss,EUR
+TCGA-DY-A1DE,56,female,white,stage iia,mss,EUR
+TCGA-CM-6674,39,male,white,stage iia,msi-h,EUR
+TCGA-CA-5255,45,male,asian,stage iia,mss,EAS
+TCGA-A6-2671,85,male,white,stage iv,mss,EUR
+TCGA-G4-6304,66,female,white,stage iib,msi-h,EUR
+TCGA-G4-6307,37,female,white,stage iiib,mss,EUR
+TCGA-DM-A1HA,82,male,white,stage iiic,mss,EUR
+TCGA-AZ-6603,77,female,white,,mss,EUR
+TCGA-AA-A00J,80,male,not reported,stage iiib,msi-h,EUR
+TCGA-CM-4747,47,male,white,stage iva,msi-l,EUR
+TCGA-AA-3713,68,male,not reported,stage iv,msi-h,EUR
+TCGA-CK-5914,81,male,white,stage iiib,mss,NOT
+TCGA-A6-2674,71,male,white,stage iv,mss,EUR
+TCGA-A6-6141,31,male,black or african american,stage iia,mss,AFR
+TCGA-AG-3580,67,male,not reported,stage i,mss,EUR
+TCGA-AA-3982,75,male,not reported,stage iiib,msi-l,EUR
+TCGA-AG-3898,61,male,not reported,stage iia,mss,EUR
+TCGA-AG-3583,66,male,not reported,stage iv,msi-l,EUR
+TCGA-CM-5864,60,male,white,stage i,mss,EUR
+TCGA-AF-6136,72,female,white,stage iiib,mss,EUR
+TCGA-AA-3955,38,male,not reported,stage iiib,mss,EUR
+TCGA-AF-5654,73,female,white,stage i,mss,EUR
+TCGA-D5-6931,77,male,white,stage iiic,mss,EUR
+TCGA-CK-4948,45,female,white,stage iii,msi-l,NOT
+TCGA-AA-3861,72,male,not reported,stage iia,msi-l,NOT
+TCGA-AG-3575,51,male,not reported,stage ii,mss,EUR
+TCGA-AD-6964,58,male,white,,msi-h,EUR
+TCGA-G4-6625,77,female,white,stage iia,mss,EUR
+TCGA-AF-4110,77,male,white,stage iva,mss,EUR
+TCGA-AA-3520,86,female,not reported,stage ii,msi-l,EUR
+TCGA-RU-A8FL,51,male,black or african american,stage iiib,mss,AFR
+TCGA-AM-5821,68,female,white,stage iia,msi-h,EUR
+TCGA-AG-3999,61,female,not reported,stage iiic,mss,EUR
+TCGA-AA-A00F,66,male,not reported,stage iiic,mss,NOT
+TCGA-AD-A5EJ,74,female,black or african american,stage iia,msi-h,AFR
+TCGA-AF-6672,43,male,white,stage iv,mss,EUR
+TCGA-G4-6297,55,female,white,stage iv,mss,EUR
+TCGA-AA-3673,53,female,not reported,stage ii,mss,EUR
+TCGA-AA-A00Q,66,female,not reported,stage iiib,mss,NOT
+TCGA-DC-6157,48,male,black or african american,stage i,mss,AFR
+TCGA-AA-3496,83,female,not reported,stage ii,msi-l,EUR
+TCGA-DC-4745,49,female,white,stage iiib,mss,EUR
+TCGA-NH-A8F7,53,female,black or african american,stage iia,indeterminate,NOT
+TCGA-D5-6929,49,female,white,stage iv,msi-l,EUR
+TCGA-F4-6856,45,male,white,stage i,msi-h,EUR
+TCGA-AZ-6607,69,male,white,stage iv,mss,EUR
+TCGA-A6-6648,56,male,white,stage iva,mss,EUR
+TCGA-EI-6509,53,male,white,stage iiic,mss,EUR
+TCGA-AA-3947,60,female,not reported,stage iib,msi-h,EUR
+TCGA-CA-5796,52,female,asian,stage iia,mss,EAS
+TCGA-DM-A280,70,female,white,stage iia,mss,EUR
+TCGA-AA-3494,55,male,not reported,stage iv,mss,EUR
+TCGA-A6-6653,82,male,white,stage i,msi-h,EUR
+TCGA-AA-A02H,74,female,not reported,stage iv,mss,EUR
+TCGA-CM-6164,46,female,white,stage iia,mss,EUR
+TCGA-AY-4070,50,female,black or african american,stage iiic,mss,AFR
+TCGA-AG-3598,69,male,not reported,stage iia,mss,EUR
+TCGA-A6-6650,69,female,black or african american,stage iia,mss,AFR
+TCGA-AG-4021,84,female,not reported,stage iv,mss,EUR
+TCGA-AA-3488,58,male,not reported,stage iv,mss,EUR
+TCGA-AA-A01G,63,male,not reported,stage iia,msi-l,NOT
+TCGA-AA-A02O,82,male,not reported,stage ii,mss,EUR
+TCGA-AZ-4681,79,female,white,stage iia,mss,EUR
+TCGA-AA-3852,88,male,not reported,stage iia,msi-l,EUR
+TCGA-G4-6302,90,female,white,stage iia,msi-h,EUR
+TCGA-AF-2692,54,female,white,stage iia,mss,EUR
+TCGA-AG-3731,65,male,not reported,stage iv,msi-l,EUR
+TCGA-AG-4008,63,male,not reported,stage iia,mss,EUR
+TCGA-F5-6863,71,female,white,stage iiib,msi-l,EUR
+TCGA-AA-3970,65,male,not reported,stage iia,mss,EUR
+TCGA-AA-A02W,73,female,not reported,stage i,msi-l,EUR
+TCGA-AA-A02J,70,female,not reported,stage iv,mss,EUR
+TCGA-CK-4947,46,female,white,stage iiib,mss,EUR
+TCGA-AG-A01W,67,female,not reported,stage ii,mss,EUR
+TCGA-A6-A56B,57,male,black or african american,stage iiib,mss,AFR
+TCGA-AA-3994,69,male,not reported,stage iiib,mss,EUR
+TCGA-CK-6747,87,female,white,stage iia,msi-h,EUR
+TCGA-G4-6586,73,female,white,stage iia,msi-h,EUR
+TCGA-CM-6168,84,female,black or african american,stage iia,msi-l,AFR
+TCGA-DM-A0X9,71,female,white,stage iia,mss,EUR
+TCGA-AA-A02R,84,female,not reported,stage iia,msi-h,EUR
+TCGA-AG-3909,69,female,not reported,stage iiib,mss,EUR
+TCGA-CM-6679,58,male,white,stage iia,mss,EUR
+TCGA-A6-2682,70,male,white,stage iv,mss,EUR
+TCGA-F5-6861,60,female,white,stage iia,mss,EUR
+TCGA-A6-A566,55,female,black or african american,stage iiib,msi-l,AFR
+TCGA-CA-6715,63,male,asian,stage iiib,mss,EAS
+TCGA-G4-6311,80,male,white,stage iii,mss,EUR
+TCGA-CL-5917,71,female,white,stage iiic,mss,EUR
+TCGA-AA-A022,88,female,not reported,stage ii,msi-h,EUR
+TCGA-AA-3854,71,female,not reported,stage i,msi-l,EUR
+TCGA-CK-6751,88,female,white,stage i,mss,EUR
+TCGA-AZ-6601,68,male,white,stage ii,msi-h,EUR
+TCGA-AA-3956,65,male,not reported,stage iia,mss,EUR
+TCGA-A6-2681,73,female,white,stage iia,mss,EUR
+TCGA-AA-3841,66,male,not reported,stage iia,mss,EUR
+TCGA-CM-4752,58,male,black or african american,stage iia,mss,AFR
+TCGA-WS-AB45,52,female,black or african american,stage iia,msi-h,AFR
+TCGA-AA-3842,51,male,not reported,stage iiia,mss,EUR
+TCGA-AA-A01C,75,male,not reported,stage iiia,mss,NOT
+TCGA-AA-3509,54,female,not reported,stage ii,mss,EUR
+TCGA-AF-A56N,47,female,black or african american,stage iia,mss,AFR
+TCGA-DY-A1DD,77,female,white,stage iiib,msi-l,EUR
+TCGA-AA-3939,83,male,not reported,stage iia,mss,NOT
+TCGA-T9-A92H,82,male,black or african american,stage iia,mss,AFR
+TCGA-AG-3609,65,female,not reported,stage iiic,mss,EUR
+TCGA-A6-6654,65,female,white,stage iiib,mss,EUR
+TCGA-AA-3930,66,male,not reported,stage iv,msi-l,NOT
+TCGA-AF-2691,48,female,white,stage i,mss,EUR
+TCGA-AA-3941,84,female,not reported,stage iva,msi-l,EUR
+TCGA-AH-6544,60,male,white,,mss,EUR
+TCGA-AA-3502,73,male,not reported,stage i,msi-l,EUR
+TCGA-AG-A01L,58,male,not reported,stage iiib,mss,NOT
+TCGA-AZ-6605,77,male,white,stage iiib,mss,EUR
+TCGA-DM-A1D4,80,male,white,stage iia,msi-l,EUR
+TCGA-QG-A5Z2,61,male,black or african american,stage i,msi-h,AFR
+TCGA-AA-A01S,47,female,not reported,stage iii,msi-l,EUR
+TCGA-AG-3728,73,male,not reported,stage iiib,mss,EUR
+TCGA-A6-A567,56,male,black or african american,stage iv,mss,AFR
+TCGA-F5-6571,62,female,white,stage iia,msi-l,EUR
+TCGA-AZ-5403,43,male,white,stage ii,mss,EUR
+TCGA-DM-A28E,72,female,white,stage iia,mss,EUR
+TCGA-AA-3492,90,female,not reported,stage ii,msi-h,EUR
+TCGA-A6-3809,71,female,white,stage iib,msi-h,EUR
+TCGA-AG-4005,64,male,not reported,stage iv,mss,EUR
+TCGA-AA-3967,77,male,not reported,stage iiib,mss,NOT
+TCGA-AA-A01I,76,male,not reported,stage i,mss,NOT
+TCGA-A6-6780,74,male,white,stage iia,msi-h,EUR
+TCGA-AA-3526,57,male,not reported,stage i,msi-l,EUR
+TCGA-A6-2676,75,female,white,stage iib,msi-h,EUR
+TCGA-DY-A1DG,75,male,white,stage iva,mss,EUR
+TCGA-CK-6748,45,female,white,stage iv,mss,EUR
+TCGA-AG-A02N,67,male,not reported,stage ii,msi-h,EUR
+TCGA-F5-6464,77,female,white,stage iiic,mss,EUR
+TCGA-CM-6163,74,male,white,stage i,mss,EUR
+TCGA-DM-A1HB,75,male,white,stage iiib,msi-h,EUR
+TCGA-AG-3887,68,male,not reported,stage iia,mss,EUR
+TCGA-SS-A7HO,44,female,black or african american,stage iib,mss,AFR
+TCGA-AG-4007,87,male,not reported,stage iv,msi-l,EUR
+TCGA-CM-6169,67,male,black or african american,stage iia,mss,AFR
+TCGA-F5-6814,57,male,white,stage iia,mss,EUR
+TCGA-AG-4022,59,female,not reported,stage ii,mss,EUR
+TCGA-AA-3543,84,male,not reported,stage i,msi-h,EUR
+TCGA-4N-A93T,67,male,black or african american,stage iiib,mss,AFR
+TCGA-DM-A1D8,50,female,white,,mss,EUR
+TCGA-AG-3882,66,female,not reported,stage i,mss,EUR
+TCGA-G4-6588,58,female,white,stage iia,msi-h,EUR
+TCGA-F4-6807,51,female,white,stage iiic,mss,EUR
+TCGA-AA-A029,67,male,not reported,stage ii,msi-l,EUR
+TCGA-AA-3972,72,male,not reported,stage iv,msi-l,EUR
+TCGA-AA-3511,64,male,not reported,stage ii,mss,EUR
+TCGA-D5-5541,63,male,white,stage iiib,mss,EUR
+TCGA-AD-6889,76,male,asian,stage iia,msi-h,EAS
+TCGA-CA-6716,65,male,asian,stage iia,mss,EAS
+TCGA-A6-4105,79,male,white,stage iia,mss,EUR
+TCGA-A6-5662,46,male,white,stage iva,mss,EUR
+TCGA-A6-6652,59,male,black or african american,stage iva,mss,AFR
+TCGA-CM-5860,44,male,white,stage iia,mss,EUR
+TCGA-CM-5861,63,female,white,stage iia,msi-h,EUR
+TCGA-AA-A01R,47,male,not reported,stage iii,msi-h,EUR
+TCGA-A6-5659,82,male,white,stage i,mss,EUR
+TCGA-DM-A285,71,female,white,stage iv,mss,EUR
+TCGA-F5-6813,70,male,white,stage iiic,mss,EUR
+TCGA-AG-3896,85,female,not reported,stage i,mss,EUR
+TCGA-DM-A28A,78,male,white,stage iiic,mss,EUR
+TCGA-D5-6529,69,male,white,stage iia,msi-l,EUR
+TCGA-QG-A5Z1,71,male,black or african american,stage iiib,msi-l,AFR
+TCGA-AG-A016,55,male,not reported,stage iv,mss,NOT
+TCGA-CA-6719,77,male,asian,stage iia,msi-l,EAS
+TCGA-NH-A50U,42,male,black or african american,stage iva,mss,AFR
+TCGA-AG-A025,62,female,not reported,stage i,mss,EUR
+TCGA-CM-6170,73,female,white,stage i,mss,EUR
+TCGA-AA-3542,69,male,not reported,stage iiic,mss,EUR
+TCGA-DY-A0XA,57,female,white,stage iia,mss,EUR
+TCGA-AG-A00H,75,male,not reported,stage iia,mss,NOT
+TCGA-QG-A5YW,55,female,black or african american,stage iiic,msi-l,NOT
+TCGA-F4-6459,61,female,white,stage iiib,mss,EUR
+TCGA-AA-3664,74,female,not reported,stage ii,mss,EUR
+TCGA-D5-6538,79,female,white,stage iiib,msi-l,EUR
+TCGA-D5-6535,80,female,white,stage iiib,mss,EUR
+TCGA-AG-A01J,59,female,not reported,stage iia,mss,NOT
+TCGA-CM-5862,80,male,white,stage iva,mss,EUR
+TCGA-AG-3591,66,female,not reported,stage iia,mss,EUR
+TCGA-CL-4957,79,female,not reported,,mss,EUR
+TCGA-AG-A02X,77,male,not reported,stage i,mss,EUR
+TCGA-AA-A02Y,73,male,not reported,stage i,mss,EUR
+TCGA-BM-6198,73,male,white,stage iiib,mss,EUR
+TCGA-AA-3666,68,male,not reported,stage iii,mss,EUR
+TCGA-5M-AATE,76,male,black or african american,stage iia,mss,EUR
+TCGA-AA-3558,70,male,not reported,stage i,mss,EUR
+TCGA-DM-A0XD,65,male,white,stage iia,msi-l,NOT
+TCGA-4T-AA8H,42,female,black or african american,stage iia,indeterminate,AFR
+TCGA-CK-6746,84,female,white,stage iib,msi-h,EUR
+TCGA-AA-A01K,74,female,not reported,stage iiic,mss,EUR
+TCGA-AG-3605,85,female,not reported,stage iv,mss,EUR
+TCGA-D5-6927,34,male,white,stage iia,msi-h,EUR
+TCGA-AG-3732,78,female,not reported,stage i,mss,EUR
+TCGA-CM-6677,75,female,white,stage iia,mss,EUR
+TCGA-EI-6513,59,male,white,stage iiib,mss,EUR
+TCGA-AZ-6598,77,female,white,stage ii,msi-h,EUR
+TCGA-AG-3586,72,female,not reported,stage iii,mss,EUR
+TCGA-AG-A01Y,49,female,not reported,stage ii,mss,EUR
+TCGA-3L-AA1B,61,female,black or african american,stage i,mss,AFR
+TCGA-AA-3975,80,male,not reported,stage i,mss,EUR
+TCGA-AA-3532,63,male,not reported,stage iia,mss,EUR
+TCGA-AA-3696,75,female,not reported,stage iv,mss,EUR
+TCGA-G4-6298,90,male,black or african american,stage iiib,msi-l,AFR
+TCGA-AA-3681,77,female,not reported,stage iii,mss,EUR
+TCGA-G4-6314,76,female,white,stage iv,mss,EUR
+TCGA-D5-6532,61,male,white,stage iia,msi-l,EUR
+TCGA-AA-3860,53,female,not reported,stage iiib,mss,EUR
+TCGA-CI-6623,44,male,white,stage i,mss,EUR
+TCGA-AY-A69D,55,female,black or african american,stage iia,msi-l,AFR
+TCGA-AA-3521,87,male,not reported,stage ii,mss,EUR
+TCGA-AG-3893,74,male,not reported,stage iiib,mss,NOT
+TCGA-D5-5537,83,male,white,stage iia,mss,EUR
+TCGA-DM-A28H,50,male,white,stage iiic,msi-l,EUR
+TCGA-CM-6166,48,female,white,stage i,mss,EUR
+TCGA-AZ-6600,64,male,black or african american,stage iv,mss,AFR
+TCGA-AA-A017,57,female,not reported,stage iia,mss,NOT
+TCGA-AA-3979,84,male,not reported,stage iia,mss,EUR
+TCGA-AA-A00Z,70,male,not reported,stage iia,mss,EUR
+TCGA-A6-4107,57,female,white,stage iiib,mss,EUR
+TCGA-D5-6540,66,male,white,stage i,msi-h,EUR
+TCGA-AA-3525,90,male,not reported,stage iiib,msi-h,EUR
+TCGA-AA-3815,65,female,not reported,stage iia,msi-h,EUR
+TCGA-DY-A1DF,73,female,white,stage iiic,msi-l,EUR
+TCGA-CI-6620,41,female,white,stage iva,mss,EUR
+TCGA-EI-6884,71,male,white,stage iiia,mss,EUR
+TCGA-AG-3584,60,male,not reported,stage iv,mss,EUR
+TCGA-EI-7004,37,female,white,,mss,EUR
+TCGA-D5-6923,57,male,white,stage i,mss,EUR
+TCGA-G4-6322,65,male,white,stage iiib,msi-l,EUR
+TCGA-AA-3855,72,male,not reported,stage i,msi-l,EUR
+TCGA-A6-6781,43,male,white,stage iiic,msi-h,EUR
+TCGA-A6-2672,82,female,white,stage iiib,msi-h,EUR
+TCGA-CM-5344,39,female,white,stage iiib,mss,EUR
+TCGA-AG-3881,83,female,not reported,stage iia,mss,EUR
+TCGA-AG-3883,69,male,not reported,stage i,mss,EUR
+TCGA-AZ-5407,51,female,white,stage i,mss,EUR
+TCGA-A6-3810,62,male,white,stage iia,mss,EUR
+TCGA-AD-6901,78,male,white,,msi-l,EUR
+TCGA-DM-A0XF,68,female,white,stage iiic,msi-l,EUR
+TCGA-CM-5348,72,male,white,stage iiib,mss,EUR
+TCGA-AA-3489,75,male,not reported,stage ii,mss,EUR
+TCGA-AA-3554,62,female,not reported,stage iia,msi-h,EUR
+TCGA-AG-3601,68,male,not reported,stage iiib,msi-l,EUR
+TCGA-F4-6806,59,female,white,stage i,mss,EUR
+TCGA-AA-3845,86,female,not reported,stage iia,msi-h,EUR
+TCGA-AA-3966,89,female,not reported,stage iia,msi-h,EUR
+TCGA-EI-6506,78,female,white,stage iia,mss,EUR
+TCGA-AA-3692,47,female,not reported,stage iv,msi-l,EUR
+TCGA-AA-3831,66,male,not reported,stage iia,mss,EUR
+TCGA-AG-3902,61,male,not reported,stage iia,mss,EUR
+TCGA-AH-6643,50,male,white,stage iiic,mss,EUR
+TCGA-CI-6622,74,male,white,stage iib,mss,EUR
+TCGA-AF-A56K,56,male,black or african american,stage iia,mss,AFR
+TCGA-D5-6924,68,male,white,stage iia,mss,EUR
+TCGA-AA-3870,71,female,not reported,stage iv,mss,EUR
+TCGA-DC-4749,57,male,white,stage i,mss,EUR
+TCGA-AZ-4615,84,male,white,stage iiib,msi-h,EUR
+TCGA-AA-3529,78,female,not reported,stage iiic,msi-l,EUR
+TCGA-CK-5912,81,male,white,stage i,mss,EUR
+TCGA-CM-4746,61,male,black or african american,stage i,msi-h,AFR
+TCGA-AD-6548,81,female,white,stage i,msi-l,EUR
+TCGA-AA-3952,68,male,not reported,stage iiic,mss,EUR
+TCGA-AA-3663,42,male,not reported,stage ii,msi-h,EUR
+TCGA-DY-A1H8,77,female,white,stage iiia,mss,EUR
+TCGA-CK-4950,68,female,black or african american,stage iiib,mss,AFR
+TCGA-G5-6235,72,male,white,stage iiib,mss,EUR
+TCGA-AG-3608,79,female,not reported,stage iia,indeterminate,EUR
+TCGA-EI-6507,60,male,white,stage iia,msi-h,EUR
+TCGA-AA-3672,90,female,not reported,stage iii,msi-h,EUR
+TCGA-DM-A28M,63,male,white,stage iia,mss,NOT
+TCGA-AA-3517,60,male,not reported,stage iia,msi-l,EUR
+TCGA-AA-3538,54,female,not reported,stage i,mss,EUR
+TCGA-AZ-4323,37,male,white,stage iv,msi-l,EUR
+TCGA-AA-3518,81,female,not reported,stage iia,msi-h,EUR
+TCGA-AA-3678,60,female,not reported,stage iii,mss,EUR
+TCGA-CK-5915,63,male,white,stage i,mss,EUR
+TCGA-AG-3602,66,female,not reported,stage iiic,mss,EUR
+TCGA-F4-6704,60,male,american indian or alaska native,stage iiic,mss,EUR
+TCGA-AY-A8YK,44,male,black or african american,stage iva,mss,AFR
+TCGA-AH-6547,79,female,white,,mss,EUR
+TCGA-CM-4750,34,female,white,stage iiia,msi-l,NOT
+TCGA-A6-6142,56,female,white,stage iva,mss,EUR
+TCGA-AG-A00Y,68,male,not reported,stage iia,mss,NOT
+TCGA-AA-3864,71,male,not reported,stage ii,msi-h,EUR
+TCGA-QG-A5YV,64,female,black or african american,stage iiic,mss,NOT
+TCGA-AZ-6606,81,male,white,stage iv,mss,EUR
+TCGA-CM-4743,69,male,white,stage iia,msi-h,EUR
+TCGA-AD-6965,62,male,white,stage iiic,mss,EUR
+TCGA-AF-A56L,48,female,black or african american,stage iiic,mss,AFR
+TCGA-AG-3587,65,male,not reported,stage i,mss,EUR
+TCGA-AA-A01Z,68,male,not reported,stage ii,mss,EUR
+TCGA-AA-A00R,64,female,not reported,stage i,msi-h,NOT
+TCGA-G4-6315,66,male,white,stage iv,mss,EUR
+TCGA-AG-3594,77,male,not reported,stage iia,mss,EUR
+TCGA-AA-3968,55,female,not reported,stage i,mss,EUR
+TCGA-AZ-4684,49,male,white,stage iva,msi-l,EUR
+TCGA-AG-A002,35,male,not reported,stage i,mss,NOT
+TCGA-AF-3400,54,male,white,stage iia,mss,EUR
+TCGA-AA-3949,87,female,not reported,stage iiib,msi-h,EUR
+TCGA-F4-6463,51,male,white,stage iia,mss,EUR
+TCGA-CM-4744,69,male,white,stage i,mss,NOT
+TCGA-CM-5863,60,female,white,stage iiib,mss,EUR
+TCGA-NH-A5IV,90,female,black or african american,stage iia,msi-h,AFR
+TCGA-F5-6811,72,female,white,stage iia,msi-l,EUR
+TCGA-AA-3950,79,female,not reported,stage iia,msi-h,EUR
+TCGA-DC-5869,62,female,black or african american,stage iiib,mss,AFR
+TCGA-CM-4748,53,male,white,stage iiib,mss,EUR
+TCGA-5M-AAT6,40,female,black or african american,stage iv,msi-h,AFR
+TCGA-AF-6655,66,male,white,stage iiia,mss,EUR
+TCGA-G4-6317,51,female,white,stage iiic,msi-l,EUR
+TCGA-EI-6511,52,male,white,stage iiib,mss,EUR
+TCGA-AA-3679,59,male,not reported,stage iv,mss,EUR
+TCGA-AA-3553,61,female,not reported,stage i,msi-l,EUR
+TCGA-D5-6534,62,female,white,stage iia,mss,EUR
+TCGA-AA-A004,76,male,not reported,stage iia,msi-l,NOT
+TCGA-F4-6569,60,male,white,stage i,mss,EUR
+TCGA-NH-A50V,69,male,black or african american,stage iiib,msi-l,AFR
+TCGA-CM-6167,57,female,black or african american,stage iiic,mss,AFR
+TCGA-AG-3891,66,female,not reported,stage i,msi-h,NOT
+TCGA-AY-A71X,54,female,black or african american,stage i,mss,AFR
+TCGA-AA-A024,81,male,not reported,stage ii,msi-l,EUR
+TCGA-AA-3989,84,male,not reported,stage iv,mss,EUR
+TCGA-QL-A97D,84,female,black or african american,stage i,mss,AFR
+TCGA-D5-7000,79,female,white,stage i,mss,EUR
+TCGA-AG-4009,83,male,not reported,stage i,mss,NOT
+TCGA-AA-3667,36,female,not reported,stage i,msi-l,EUR
+TCGA-AA-3867,74,male,not reported,stage iv,mss,EUR
+TCGA-CM-6678,63,female,white,stage iva,mss,EUR
+TCGA-DM-A1DB,68,male,white,stage iia,mss,EUR
+TCGA-AA-3684,65,female,not reported,stage iv,mss,EUR
+TCGA-AA-3522,67,male,not reported,stage iia,mss,EUR
+TCGA-F5-6465,64,female,white,stage iia,mss,EUR
+TCGA-AA-3811,84,female,not reported,stage iii,msi-h,EUR
+TCGA-AG-4001,74,female,not reported,stage iia,msi-l,EUR
+TCGA-EI-6508,48,female,white,stage iiib,mss,EUR
+TCGA-AY-A54L,74,female,black or african american,stage i,msi-l,AFR
+TCGA-AH-6644,73,male,white,,msi-l,EUR
+TCGA-A6-2677,68,female,white,stage iiic,mss,EUR
+TCGA-AA-3516,74,female,not reported,stage iii,msi-h,EUR
+TCGA-AA-3662,80,female,not reported,stage iv,mss,EUR
+TCGA-G4-6320,73,male,white,stage iii,msi-h,EUR
+TCGA-AG-3582,75,male,not reported,stage iv,mss,EUR
+TCGA-AA-3984,61,female,not reported,stage iia,mss,EUR
+TCGA-A6-5657,65,male,black or african american,stage iiib,mss,AFR
+TCGA-D5-6920,77,female,white,stage iia,mss,EUR
+TCGA-AA-3685,69,male,not reported,stage ii,mss,EUR
+TCGA-AA-A02F,68,female,not reported,stage iv,mss,EUR
+TCGA-A6-A565,34,female,black or african american,stage iiic,msi-l,NOT
+TCGA-AA-3697,77,male,not reported,stage ii,msi-l,EUR
+TCGA-AA-3514,81,female,not reported,stage i,mss,EUR
+TCGA-AZ-4315,61,male,white,stage iia,mss,EUR
+TCGA-AG-3892,57,female,not reported,stage i,mss,EUR
+TCGA-AA-3534,78,female,not reported,stage iia,mss,EUR
+TCGA-CA-6718,46,male,asian,stage iia,mss,EAS
+TCGA-G4-6295,70,female,white,stage ii,msi-l,EUR
+TCGA-AG-3890,62,male,not reported,stage i,mss,EUR
+TCGA-AA-A01D,47,female,not reported,stage iiic,mss,NOT
+TCGA-AA-3715,77,male,not reported,stage ii,msi-h,EUR
+TCGA-EI-6882,59,male,white,stage iia,msi-h,EUR
+TCGA-NH-A6GB,71,female,black or african american,stage iiic,mss,AFR
+TCGA-DM-A1D9,67,female,white,stage iia,mss,EUR
+TCGA-CM-4751,62,male,white,stage iiib,mss,EUR
+TCGA-AA-A00N,75,male,not reported,stage iib,msi-l,NOT
+TCGA-G4-6309,40,female,black or african american,stage iiib,msi-h,AFR
+TCGA-D5-6531,75,male,white,stage iia,mss,EUR
+TCGA-AZ-4682,61,male,white,stage iva,mss,EUR
+TCGA-A6-2685,48,female,black or african american,stage iia,mss,AFR
+TCGA-F5-6812,67,male,white,stage iia,mss,EUR
+TCGA-AG-3885,71,female,not reported,stage iiib,mss,EUR
+TCGA-AG-3727,78,female,not reported,stage iii,mss,EUR
+TCGA-AA-A03J,65,female,not reported,stage i,mss,EUR
+TCGA-AA-3549,69,male,not reported,stage i,mss,EUR
+TCGA-AZ-4616,82,female,white,stage iv,msi-l,EUR
+TCGA-AG-A008,50,female,not reported,stage i,mss,NOT
+TCGA-DM-A282,60,female,white,stage iia,mss,EUR
+TCGA-F4-6805,58,female,white,stage iia,mss,EUR
+TCGA-F4-6809,52,female,white,stage iva,mss,EUR
+TCGA-G4-6321,60,female,white,stage iii,msi-l,EUR
+TCGA-AA-3544,68,male,not reported,stage i,mss,EUR
+TCGA-D5-6536,73,male,white,stage iia,mss,EUR
+TCGA-AA-3973,69,male,not reported,stage iv,msi-l,EUR
+TCGA-AD-6890,65,male,white,,mss,EUR
+TCGA-AD-A5EK,51,male,black or african american,stage i,mss,AFR
+TCGA-AD-6899,84,male,white,stage iiic,mss,EUR
+TCGA-DM-A1D6,88,male,white,stage iia,mss,EUR
+TCGA-A6-5656,74,male,white,stage i,mss,NOT
+TCGA-DC-6155,31,female,white,stage iiia,mss,EUR
+TCGA-D5-6537,64,male,white,stage iiib,mss,EUR
+TCGA-AG-3906,67,female,not reported,stage i,msi-h,NOT
+TCGA-CM-6162,48,female,white,stage iiib,msi-h,EUR
+TCGA-F4-6570,78,female,white,stage iia,msi-h,EUR
+TCGA-D5-6928,80,male,white,stage iia,msi-h,EUR
+TCGA-CM-6171,77,female,white,stage i,msi-h,EUR
+TCGA-D5-6539,45,female,white,,mss,EUR
+TCGA-F5-6702,71,male,white,stage iva,mss,NOT
+TCGA-AZ-6608,55,female,white,stage iiia,msi-l,EUR
+TCGA-AG-A036,71,male,not reported,stage iii,mss,EUR
+TCGA-AA-3846,74,female,not reported,stage iia,mss,EUR
+TCGA-AA-3814,85,female,not reported,stage iia,mss,EUR
+TCGA-AA-3680,67,female,not reported,stage iv,msi-l,EUR
+TCGA-CL-5918,90,female,white,stage iia,mss,EUR
+TCGA-DM-A1DA,71,female,white,stage iiic,msi-l,EUR
+TCGA-CM-6165,74,male,white,stage iia,mss,NOT
+TCGA-AA-3710,80,female,not reported,stage iia,msi-h,EUR
+TCGA-AY-6197,60,male,white,stage iia,msi-h,EUR
+TCGA-DM-A28C,74,male,white,stage iia,mss,EUR
+TCGA-AA-A01T,63,female,not reported,stage iii,mss,EUR
+TCGA-A6-5664,80,male,black or african american,stage iiic,mss,AFR
+TCGA-D5-6530,53,male,white,stage i,msi-h,EUR
+TCGA-AF-2687,57,male,white,stage iiic,mss,EUR
+TCGA-AA-3660,51,female,not reported,stage ii,mss,EUR
+TCGA-D5-6533,68,female,white,,mss,EUR
+TCGA-AA-A00W,80,male,not reported,stage i,mss,NOT
+TCGA-DM-A1D7,82,male,white,stage iia,mss,EUR
+TCGA-A6-2683,57,female,white,stage iv,msi-l,EUR
+TCGA-AU-3779,80,female,white,stage iia,mss,EUR
+TCGA-AG-3611,72,male,not reported,stage iia,mss,EUR
+TCGA-CM-6680,78,female,white,stage iiib,mss,EUR
+TCGA-AZ-6599,72,male,white,stage i,mss,EUR
+TCGA-AG-3742,85,female,not reported,stage i,mss,EUR
+TCGA-CM-6675,35,male,black or african american,stage ivb,mss,AFR
+TCGA-AA-3556,78,male,not reported,stage i,mss,EUR
+TCGA-AG-3725,90,female,not reported,stage iii,mss,EUR
+TCGA-AG-3878,64,male,not reported,stage i,mss,EUR
+TCGA-AA-3818,78,female,not reported,stage iia,mss,EUR
+TCGA-AG-A00C,49,female,not reported,stage iiib,mss,NOT
+TCGA-A6-2680,72,female,black or african american,stage ii,mss,AFR
+TCGA-G5-6233,74,male,white,,msi-l,EUR
+TCGA-DM-A28G,75,male,white,stage iia,mss,EUR
