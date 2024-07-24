@@ -1,35 +1,51 @@
 library(ggplot2)
+library(biomaRt)
+library(dplyr)
 
 # Read ASE data from SplAdder database
-ASE_Spladder<- read.table("/Users/aychaserradj/Desktop/ZHAW/Praktikum/data/SplAdder_PSI_COAD_READ_short_names.tsv", header = TRUE, sep = "\t")
+ASE_Spladder<- read.table("/Users/aychaserradj/Desktop/ZHAW/Praktikum/data/SplAdder_PSI_COAD_and_READ.tsv", header = TRUE, sep = "\t")
+ASE_Spladder$GeneID <- sub("\\..*", "", ASE_Spladder$GeneID)
 ASE_SpliceSeq<- read.table("/Users/aychaserradj/Desktop/ZHAW/Praktikum/data/PSI_COAD_and_READ.tsv", header = TRUE, sep = "\t")
+
+# rename ASE types to common names in SplAdder and SpliceSeq data base
+# Define a named vector with the replacements
+replacements_spliceseq <- c("AA" = "Alternate acceptor",
+                            "AD" = "Alternate donor",
+                            "ES" = "Exon skipping",
+                            "ME" = "Mutually exclusive exons",
+                            "RI" = "Retained Intron",
+                            "AP" = " Alternate promotor",
+                            "AT" = "Alternate terminator")
+
+replacements_spladder <- c("A3" = "Alternate acceptor", 
+                           "A5" = "Alternate donor",
+                           "ES" = "Exon skipping",
+                           "ME" = "Mutually exclusive exons",
+                           "IR" = "Retained Intron")
+
+ASE_Spladder$SpliceType <- replacements_spladder[ASE_Spladder$SpliceType]
+ASE_SpliceSeq$splice_type <- replacements_spliceseq[ASE_SpliceSeq$splice_type]
 
 # Get column names that end with the specific substring
 # for SplAdder data base
-columns_with_substring_normal <- grep("Event$|Type$|Symbol$|.11A$", names(ASE_Spladder), value = TRUE)
-columns_with_substring_tumor <- grep("Event$|Type$|Symbol$|.01A$", names(ASE_Spladder), value = TRUE)
+columns_with_substring_normal <- grep("Event$|Type$|Symbol$|GeneID$|.11A.", names(ASE_Spladder), value = TRUE)
+columns_with_substring_tumor <- grep("Event$|Type$|Symbol$|GeneID$|.01A.", names(ASE_Spladder), value = TRUE)
 
 # Create a subset with tumor and normal samples
 normal_samples <- subset(ASE_Spladder, select = columns_with_substring_normal)
 tumor_samples <- subset(ASE_Spladder, select = columns_with_substring_tumor)
 
-# Select normal sampls of SpliceSeq data
-culumns_spliceseq_normal <- grep("symbol$|splice_type$|_Norm",  names(ASE_SpliceSeq), value = TRUE)
-#  Select tumor sampls of SpliceSeq data
+# Select normal samples of SpliceSeq data
+culumns_spliceseq_normal <- grep("symbol$|as_id$|splice_type$|_Norm",  names(ASE_SpliceSeq), value = TRUE)
 normal_samples_spliceseq <- subset(ASE_SpliceSeq, select = culumns_spliceseq_normal)
-tumor_samples_spliceseq <- ASE_SpliceSeq[, -c(which(names(ASE_SpliceSeq) %in% culumns_spliceseq_normal))]
+# Pattern for tumor samples
+#  Select tumor samples of SpliceSeq data
+pattern <- "^[^_]*_[^_]*_[^_]*$|symbol$|as_id$|splice_type$"
+selected_columns <- grep(pattern, names(ASE_SpliceSeq), value = TRUE)
 
-
-# Calculate mean values for each row ("na.rm" -> only on the non-missing values) 
-# nan rows still preserved 
-mean_values_normal <- rowMeans(normal_samples[, -(1:3)], na.rm = TRUE)
-mean_values_normal_list <-  unname(as.list(mean_values_normal))
-mean_values_normal <- unlist(mean_values_normal_list, use.names = FALSE)
-
-
-mean_values_tumor <- rowMeans(tumor_samples[, -(1:3)], na.rm = TRUE)
-mean_values_tumor_list <- unname(as.list(mean_values_tumor))
-mean_values_tumor <- unlist(mean_values_tumor_list, use.names = FALSE)
+# Subset the data frame with selected columns
+tumor_samples_spliceseq <- ASE_SpliceSeq[selected_columns]
+tumor_samples_spliceseq <- tumor_samples_spliceseq[, -3]
 
 
 # source: https://stat.ethz.ch/pipermail/r-help/2008-February/154167
@@ -38,113 +54,103 @@ perform_t_test <- function(t, n) {
   if (is(obj, "try-error")) return (NA) else return(obj$p.value)
 }
 
-# vector for p_values of the t-tests
-results_p_values <- vector(mode = "numeric", length = 0)
-# vector for the ASE names, to identify the most significant ASE 
-ASE_names <- character(0)
-
 
 # Method to perform t-test
 run_t_test <- function(normal_samples, tumor_samples, db){
   results_p_values <- vector(mode = "numeric", length = 0)
+  ASE_gene_names <- character(0)
+  ASE_type <- character(0)
   ASE_names <- character(0)
   for (i in 1:nrow(normal_samples)){
     tumor <- as.numeric(tumor_samples[i,])
     normal <- as.numeric(normal_samples[i,])
     # for spliceseq only remove first two one, SpliceAdder remove first tree one
     if (db == "spliceseq"){
-      tumor_t <- tumor[-c(1,2)]
-      normal_t <- normal[-c(1,2)]
-    } else if (db == "spladder"){
       tumor_t <- tumor[-c(1,2,3)]
       normal_t <- normal[-c(1,2,3)]
+    } else if (db == "spladder"){
+      tumor_t <- tumor[-c(1,2,3,4)]
+      normal_t <- normal[-c(1,2,3,4)]
     }
-    ASE_names <- c(ASE_names, paste(normal_samples[i,][1]))
+
+    if (db == "spladder"){
+      ASE_type <- c(ASE_type, paste(normal_samples[i,][4]))
+      ASE_names <- c(ASE_names, paste(normal_samples[i,][1]))
+      ASE_gene_names <- c(ASE_gene_names, paste(normal_samples[i,][2]))
+    }else{
+      ASE_type <- c(ASE_type, paste(normal_samples[i,][3]))
+      ASE_names <- c(ASE_names, paste(normal_samples[i,][2]))
+      ASE_gene_names <- c(ASE_gene_names, paste(normal_samples[i,][1]))
+    }
     t_test_p_value <- perform_t_test(tumor_t, normal_t)
     results_p_values <- c(results_p_values, t_test_p_value)
   }
   # Create dictionary of ASE names and p_values from t-test
-  ASE_and_p_values <- setNames(results_p_values, ASE_names)
-  return(ASE_and_p_values)
-}
-
-# SpliceSeq 3526 significant ASE 
-# SplAdder 30859 significant ASE
-eval_ASE_p_values <- function(ASE_and_p_values){
-  # Empty dictionary for the significant ASE 
-  ASE_p_value_significant <- c()
-  # Filter to get the ASE event that are significant
-  for (key in names(ASE_and_p_values)){
-    if (!is.na(ASE_and_p_values[key]) && 
-        !is.nan(ASE_and_p_values[key]) && 
-        ASE_and_p_values[key] < 0.05){
-      ASE_p_value_significant[key] <- ASE_and_p_values[key]
-    }
-  }
-  ASE_p_value_significant_unlist <- unlist(ASE_p_value_significant)
-  # sortieren funtioniert nicht so ganz
-  ASE_p_value_significant_sort <- sort(ASE_p_value_significant_unlist, decreasing = FALSE)
-  # TODO print ASE names
-  return(ASE_p_value_significant_sort)
+  results_p_values <- p.adjust(results_p_values, method = "BH")
+  
+  indices_to_remove <- c()
+  
+  # Iterate over the indices of results_p_values
+  indices_to_remove <- which(is.na(results_p_values) | is.nan(results_p_values) | results_p_values >= 0.05)
+  
+  # Remove elements from all vectors simultaneously
+  results_p_values <- results_p_values[-indices_to_remove]
+  ASE_type <- ASE_type[-indices_to_remove]
+  ASE_names <- ASE_names[-indices_to_remove]
+  ASE_gene_names <- ASE_gene_names[-indices_to_remove]
+  
+  ASE_and_p_values <- setNames(ASE_gene_names, results_p_values)
+  return(list(ASE_and_p_values, ASE_type, ASE_gene_names))
 }
 
 
-# method to create boxplot
-create_box_plot <- function(normal, tumor){
-  data <- list(normal=normal, tumor=tumor)
-  boxplot(data, main = "Boxplot of Groups", ylab= "Values")
-}
+SpliceSeq_ASE_types <- as.data.frame(ASE_SpliceSeq_p_values[2])
+SplAdder_ASE_types <- as.data.frame(ASE_SplAdder_p_values[2])
+names(SpliceSeq_ASE_types)[names(SpliceSeq_ASE_types) == "c..Retained.Intron....Retained.Intron....Alternate.donor....Exon.skipping..."] <- "ase_type"
 
-# methode ist akuell nur für SplAdder -> umbauen auch für SpliceSeq
-get_ASE_genenames <- function(ASE_significant, ASE_db){
-  gene_names <- c()
-  ASE_significant_list <- as.list(ASE_significant)
-  eval_df <- as.data.frame(ASE_significant_list)
-  for (name in names(eval_df)){
-    if (name %in% ASE_db$SpliceEvent){
-      ASE_gene_name <- ASE_db$GeneSymbol[ASE_db$SpliceEvent == name]
-      gene_names <- c(gene_names, ASE_gene_name)
-  }
-  }
-  gene_counts <- table(gene_names)
-  return(gene_counts)
-}
+SpliceSeq_ASE_types_percentage <- prop.table(table(SpliceSeq_ASE_types$ase_type)) * 100
+SplAdder_ASE_types_percentage <- prop.table(table(SplAdder_ASE_types$ase_type)) * 100
 
+SplAdder_ASE_types_percentage <- as.data.frame(SplAdder_ASE_types_percentage)
+SpliceSeq_ASE_types_percentage <- as.data.frame(SpliceSeq_ASE_types_percentage)
 
-get_AS_type <- function(ASE_significant, ASE_db){
-  ASE_type <- c()
-  ASE_significant_list <- as.list(ASE_significant)
-  eval_df <- as.data.frame(ASE_significant_list)
-  for (name in names(eval_df)){
-    if (name %in% ASE_db$SpliceEvent){
-      ASE_type_name <- ASE_db$SpliceType[ASE_db$SpliceEvent == name]
-      ASE_type <- c(ASE_type, ASE_type_name)
-    }
-  }
-  ASE_type_counts <- table(ASE_type)
-  return(ASE_type_counts)
-}
+SplAdder_ASE_types_percentage$group <- "SplAdder"
+SpliceSeq_ASE_types_percentage$group <- "SpliceSeq"
 
+ASE_types_combined <- bind_rows(SplAdder_ASE_types_percentage, SpliceSeq_ASE_types_percentage)
 
 plot_gene_names <- function(gene_counts){
   top_20_genes <- head(sort(gene_counts, decreasing = TRUE), 20)
-  ggplot(as.data.frame(top_20_genes), aes(x = gene_names, y = Freq, fill = gene_names)) +
+  print(top_20_genes)
+  ggplot(as.data.frame(top_20_genes), aes(x = V1, y = Freq, fill = V1)) +
     geom_col() +
-    labs(title = "Histogram of Gene Frequencies", x = "Gene Names", y = "Frequency") +
+    labs(title = "Histogram of Gene Frequencies ASE SpliceSeq", x = "Gene ID", y = "Number ASE") +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
 }
 
-plot_ASE_type <- function(type_counts){
-  ggplot(as.data.frame(type_counts), aes(x = ASE_type, y = Freq, fill = ASE_type)) +
-    geom_col() +
-    labs(title = "Histogram of AS Frequencies", x = "AS types", y = "Frequency") +
+plot_ASE_type <- function(combined_df){
+  #ASE_types_combined <- bind_rows(SplAdder_ASE_types_percentage, SpliceSeq_ASE_types_percentage)
+  ggplot(combined_df, aes(x = Var1, y = Freq, fill = group)) +
+    geom_bar(stat = "identity", position = position_dodge(width = 0.8)) +
+    scale_fill_manual(values = c("SplAdder" = "aquamarine4", "SpliceSeq" = "azure3")) +
+    labs(x = " ASE Type", y = "Percentage %", title = "Percentage of ASE Types for SplAdder and SpliceSeq Database") +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
 }
 
-STR <- read.table("/Users/aychaserradj/Desktop/ZHAW/Praktikum/data/tral_and_perf_panel_meta_info_updated.tsv", header = TRUE, sep = "\t")
 
-get_ASE_STR <- function(){
+
+get_gene_id_ensemble <- function(gene_symbols){
+  ensembl <- useMart("ensembl", dataset = "hsapiens_gene_ensembl")
   
+  # Specify attributes
+  attributes <- c("ensembl_gene_id", "external_gene_name")
+  #gene_symbols <- gene_symbols$V1
+  
+  # Retrieve gene IDs
+  gene_data <- getBM(attributes = attributes, filters = "external_gene_name", values = gene_symbols, mart = ensembl)
+  
+  # Print the results
+  return(gene_data)
 }
