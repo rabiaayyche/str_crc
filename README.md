@@ -5,4 +5,4 @@ The aim was to identify short tandem repeats (STR) associated with alternative s
 The analysis was performed for colorectal cancer CRC data from the TCGA database. The alternative splicing data was obtained from both the SpliceSeq and SplAdder databases.
 
 
-### RESULTS
+
